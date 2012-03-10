@@ -24,4 +24,22 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
         $copyright->setCreatedYear('2010');
         return $copyright;
     }
+    
+/*    public function createComponent($name) {
+        parent::createComponent($name);
+        switch ($name) {
+            case 'copyright':
+                return new Copyright();
+
+                break;
+
+            default:
+                break;
+        }
+    }*/
+    
+    public function beforeRender(){
+        //$this['copyright2'] = new Copyright;
+        //$this->addComponent(new Copyright, 'copyright3');
+    }
 }
