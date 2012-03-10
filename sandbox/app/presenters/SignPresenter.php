@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the Nette Presentation project
+ *
+ * Copyright (c) 2012 Jan Svantner, Peter Szabo
+ *
+ * For the full copyright and license information, please view
+ * the file license.txt that was distributed with this source code.
+ */
 
 use Nette\Application\UI,
 	Nette\Security as NS;
@@ -7,8 +15,7 @@ use Nette\Application\UI,
 /**
  * Sign in/out presenters.
  *
- * @author     John Doe
- * @package    MyApplication
+ * @author Svantner Jan
  */
 class SignPresenter extends BasePresenter
 {

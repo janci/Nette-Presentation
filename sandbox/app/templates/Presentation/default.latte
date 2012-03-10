@@ -9,7 +9,13 @@ Here is macro hello: {hello} <br />
 {/try}
 
 <br />
+
 <a href="{link myhandler!}" class="ajax" style="color: red;">Url: {link myhandler!}</a><br />
-<a href="{link setback!}" class="ajax" style="color: red;">Url: {link setback!}</a>
+<a href="{link setback!}" class="ajax" style="color: red;">Url: {link setback!}</a><br />
+
+<a href="{link myhandler!}" style="color: red;">Url: {link myhandler!} (without ajax)</a><br /><br />
 
 {snippet changeMessage}{$message}{/snippet}
+
+<div class="footer">{control copyright}</div>
+<div class="footer">Copyright {control copyright:year} ~ {control copyright:company}</div>

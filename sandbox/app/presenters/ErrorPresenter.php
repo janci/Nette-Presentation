@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the Nette Presentation project
+ *
+ * Copyright (c) 2012 Jan Svantner, Peter Szabo
+ *
+ * For the full copyright and license information, please view
+ * the file license.txt that was distributed with this source code.
+ */
 
 use Nette\Diagnostics\Debugger,
 	Nette\Application as NA;
@@ -7,9 +15,7 @@ use Nette\Diagnostics\Debugger,
 
 /**
  * Error presenter.
- *
- * @author     John Doe
- * @package    MyApplication
+ * @author Svantner Jan
  */
 class ErrorPresenter extends BasePresenter
 {
