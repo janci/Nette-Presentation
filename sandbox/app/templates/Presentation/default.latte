@@ -1,0 +1,15 @@
+{use DemoMacros}
+{default $message = 'All is ok.'}
+
+{block content}
+Here is macro hello: {hello} <br />
+
+{try}
+    {? throw new \Exception('Here is any error.',2001);}
+{/try}
+
+<br />
+<a href="{link myhandler!}" class="ajax" style="color: red;">Url: {link myhandler!}</a><br />
+<a href="{link setback!}" class="ajax" style="color: red;">Url: {link setback!}</a>
+
+{snippet changeMessage}{$message}{/snippet}
