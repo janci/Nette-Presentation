@@ -19,6 +19,10 @@ class HomepagePresenter extends BasePresenter
 	public function renderDefault()
 	{
 		$this->template->anyVariable = 'any value';
+                $myclass = $this->getService('myclass');
+                \Nette\Diagnostics\Debugger::barDump($myclass);
+                $parameters = $this->getContext()->getParameters();
+                \Nette\Diagnostics\Debugger::barDump($parameters);
 	}
 
 }

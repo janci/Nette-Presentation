@@ -6,13 +6,13 @@
 #
 common:
 	parameters:
-		database:
-			driver: mysql
-			host: localhost
-			dbname: test
-			user:
-			password:
-
+		includes: [db.neon]
+#		database:
+#			driver: mysql
+#			host: localhost
+#			dbname: test
+#			user:
+#			password:
 
 	php:
 		date.timezone: Europe/Prague
@@ -34,9 +34,10 @@ common:
 	services:
 		database: @Nette\Database\Connection
 		authenticator: Authenticator( @database::table(users) )
-		myclass: Authenticator::createDemo()
+		myclass: @myclass2
 
 	factories:
+		myclass2: Authenticator::createDemo()
 		
 
 

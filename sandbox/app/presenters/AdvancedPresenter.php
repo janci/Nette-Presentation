@@ -38,7 +38,7 @@ class AdvancedPresenter extends BasePresenter {
                 ->addRule(Nette\Forms\Form::FILLED, 'Text input is required.')
                 ->addRule(Nette\Forms\Form::EMAIL, 'Text input must have email format.');
         $form['ell1']->getControlPrototype()->style('border: 1px solid blue');
-        $form['ell1']->getLabelPrototype()->style('color: red');
+        $form['ell1']->getLabelPrototype()->style('color: red')->{'data-mykey'}('U12347');
         
         $form->addTextArea('ell2','Textarea');
         $form->addSubmit('send', 'Send to session');
