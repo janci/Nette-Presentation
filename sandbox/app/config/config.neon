@@ -5,8 +5,8 @@
 # http://nette.org/security-warning
 #
 common:
+	includes: [db.neon]
 	parameters:
-		includes: [db.neon]
 #		database:
 #			driver: mysql
 #			host: localhost
@@ -24,7 +24,16 @@ common:
 		session:
 			autoStart: smart
 
+#		database:
+#			default:
+#				dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+#				user: %database.user%
+#				password: %database.password%
+
+
 	services:
+#		database: @Nette\Database\Connection
+#		authenticator: Authenticator( @database::table(users) )
 		myclass: @myclass2
 
 	factories:
