@@ -5,3 +5,12 @@ parameters:
         dbname: test
         user: testuser
         password: testpassword
+services:
+    database: @Nette\Database\Connection
+    authenticator: Authenticator( @database::table(users) )
+nette:
+    database:
+        default:
+            dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+            user: %database.user%
+            password: %database.password%
