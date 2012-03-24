@@ -1,0 +1,30 @@
+{block #content}
+<h2>Form - Basic using</h2>
+{control basicform}
+
+<hr />
+<h2>Form - Advanced using</h2>
+{form advform}
+    {label ell1}Element1{/label}
+    {label ell2}Element2{/label}<br /><br />
+    
+    {input ell2}<br>
+    {input ell1}<br />
+    {input send}
+{/form}
+<hr />
+
+<h2>Form - Using server validation</h2>
+{* {control errform} *}
+{form errform}
+    <ul n:if="$form->errors">
+        <li n:foreach="$form->errors as $error">{$error}</li>
+    </ul>
+    
+    {label eli1}Element1{/label}
+    {label eli2}Element2{/label}<br /><br />
+    
+    {input eli2}<br>
+        <input type="text" style="border: 1px solid orange;" class="myelement" n:input="eli1" /><br />
+    {input send}
+{/form}
