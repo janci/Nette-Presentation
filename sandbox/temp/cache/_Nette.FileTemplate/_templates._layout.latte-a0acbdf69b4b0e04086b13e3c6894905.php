@@ -1,16 +1,16 @@
-<?php //netteCache[01]000379a:2:{s:4:"time";s:21:"0.93133200 1331369153";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:57:"/home/weby/nette_demo/sandbox/app/templates/@layout.latte";i:2;i:1331368865;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"94abcaa released on 2012-02-29";}}}?><?php
+<?php //netteCache[01]000377a:2:{s:4:"time";s:21:"0.90070700 1336217955";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:57:"/home/weby/nette_demo/sandbox/app/templates/@layout.latte";i:2;i:1331368865;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:28:"$WCREV$ released on $WCDATE$";}}}?><?php
 
 // source file: /home/weby/nette_demo/sandbox/app/templates/@layout.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'odb9jm7twb')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'sybgx67j0d')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block head
 //
-if (!function_exists($_l->blocks['head'][] = '_lb7939bec3ec_head')) { function _lb7939bec3ec_head($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head'][] = '_lb284f5db5ec_head')) { function _lb284f5db5ec_head($_l, $_args) { extract($_args)
 ;
 }}
 

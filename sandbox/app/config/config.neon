@@ -35,6 +35,7 @@ common:
 #		database: @Nette\Database\Connection
 #		authenticator: Authenticator( @database::table(users) )
 		myclass: @myclass2
+		translator: Translator
 
 	factories:
 		myclass2: Authenticator::createDemo()
