@@ -1,16 +1,16 @@
-<?php //netteCache[01]000392a:2:{s:4:"time";s:21:"0.47192400 1332590377";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:70:"/home/weby/nette_demo/sandbox/app/templates/Presentation/default.latte";i:2;i:1332590369;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"94abcaa released on 2012-02-29";}}}?><?php
+<?php //netteCache[01]000392a:2:{s:4:"time";s:21:"0.93220900 1332590753";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:70:"/home/weby/nette_demo/sandbox/app/templates/Presentation/default.latte";i:2;i:1332590639;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"94abcaa released on 2012-02-29";}}}?><?php
 
 // source file: /home/weby/nette_demo/sandbox/app/templates/Presentation/default.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'g5sr12odnx')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'm9ri8iysmf')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block content
 //
-if (!function_exists($_l->blocks['content'][] = '_lbd6348c3ee7_content')) { function _lbd6348c3ee7_content($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['content'][] = '_lb6ffe3e8ea1_content')) { function _lb6ffe3e8ea1_content($_l, $_args) { extract($_args)
 ?>Here is macro hello: <?php echo "Hello world :)" ?> <br />
 
 <?php try { throw new \Exception('Here is any error.',2001); }catch(\Exception $e){} ?>
@@ -19,9 +19,9 @@ if (!function_exists($_l->blocks['content'][] = '_lbd6348c3ee7_content')) { func
 
 <a href="<?php echo htmlSpecialChars($_control->link("myhandler!")) ?>" class="ajax" style="color: red;">Url: <?php echo Nette\Templating\Helpers::escapeHtml($_control->link("myhandler!"), ENT_NOQUOTES) ?></a><br />
 <a href="<?php echo htmlSpecialChars($_control->link("setback!")) ?>" class="ajax" style="color: red;">Url: <?php echo Nette\Templating\Helpers::escapeHtml($_control->link("setback!"), ENT_NOQUOTES) ?></a><br />
-<a href="<?php echo htmlSpecialChars($_control->link("setback!", array('a'=>2, 'b'=>3))) ?>
-" class="ajax" style="color: red;">Url: <?php echo Nette\Templating\Helpers::escapeHtml($_control->link("setback!", array('a'=>2, 'b'=>3)), ENT_NOQUOTES) ?></a><br />
 
+<a href="<?php echo htmlSpecialChars($_control->link("setback!", array('a'=>2, 'b'=>3))) ?>
+" style="color: red;">Url: <?php echo Nette\Templating\Helpers::escapeHtml($_control->link("setback!", array('a'=>2, 'b'=>3)), ENT_NOQUOTES) ?></a><br />
 <a href="<?php echo htmlSpecialChars($_control->link("myhandler!")) ?>" style="color: red;">Url: <?php echo Nette\Templating\Helpers::escapeHtml($_control->link("myhandler!"), ENT_NOQUOTES) ?> (without ajax)</a><br /><br />
 
 <div id="<?php echo $_control->getSnippetId('changeMessage') ?>"><?php call_user_func(reset($_l->blocks['_changeMessage']), $_l, $template->getParameters()) ?>
@@ -36,7 +36,7 @@ if (!function_exists($_l->blocks['content'][] = '_lbd6348c3ee7_content')) { func
 //
 // block _changeMessage
 //
-if (!function_exists($_l->blocks['_changeMessage'][] = '_lb73829ace3b__changeMessage')) { function _lb73829ace3b__changeMessage($_l, $_args) { extract($_args); $_control->validateControl('changeMessage')
+if (!function_exists($_l->blocks['_changeMessage'][] = '_lbbd44637d7d__changeMessage')) { function _lbbd44637d7d__changeMessage($_l, $_args) { extract($_args); $_control->validateControl('changeMessage')
 ;echo Nette\Templating\Helpers::escapeHtml($message, ENT_NOQUOTES) ;
 }}
 

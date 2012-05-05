@@ -3,14 +3,17 @@ parameters:
         driver: mysql
         host: localhost
         dbname: test
-        user: testuser
-        password: testpassword
+        #user: testuser
+        #password: testpassword
+        user:
+        password:
 services:
     database: @Nette\Database\Connection
     authenticator: Authenticator( @database::table(users) )
 nette:
     database:
         default:
-            dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+            #dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+            dsn: 'sqlite:%appDir%/database/demo.sq3'
             user: %database.user%
             password: %database.password%

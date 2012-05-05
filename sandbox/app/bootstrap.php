@@ -7,7 +7,7 @@ use Nette\Application\Routers\Route;
 
 
 // Load Nette Framework
-require LIBS_DIR . '/Nette/loader.php';
+require LIBS_DIR . '/nette/Nette/loader.php';
 
 
 // Configure application
@@ -26,7 +26,7 @@ $configurator->createRobotLoader()
 
 // Create Dependency Injection container from config.neon file
 $configurator->addConfig(__DIR__ . '/config/config.neon');
-$configurator->setProductionMode(false);
+$configurator->setDebugMode(true);
 \Nette\Diagnostics\Debugger::enable(\Nette\Diagnostics\Debugger::DEVELOPMENT);
 
 $container = $configurator->createContainer();

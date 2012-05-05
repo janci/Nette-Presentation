@@ -26,6 +26,7 @@ class AdvancedPresenter extends BasePresenter {
         $form = new \Nette\Application\UI\Form;
         $form->addText('el1', 'Text input');
         $form->addTextArea('el2','Textarea');
+        $form['nameOfElement'] = new Nette\Forms\Controls\TextArea("New textarea");
         $form->addSubmit('send', 'Send to session');
         
         $form->onSuccess[] = array($this, 'successFormSend');
@@ -50,6 +51,7 @@ class AdvancedPresenter extends BasePresenter {
     public function createComponentErrform(){
         $form = new \Nette\Application\UI\Form;
         $form->addText('eli1', 'Text input');
+        $form['eli1']->getControlPrototype()->{'data-demo'}('my-information');
         $form->addTextArea('eli2','Textarea');
         $form->addSubmit('send', 'Send to session');
         $form->onSuccess[] = array($this, 'allerr');
