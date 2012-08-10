@@ -24,10 +24,10 @@ class PresentationPresenter extends BasePresenter
         //invalidate the snippet
         $this->invalidateControl('changeMessage');
         
-        //the snippet can be also validated back
+        //invalidate all the snippets in the template
         //$this->invalidateControl();
         
-        //invalidate all the snippets in the template
+	//the snippet can be also validated back
         //$this->validateControl('changeMessage');
     }
     
