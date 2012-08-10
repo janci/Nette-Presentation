@@ -19,7 +19,7 @@ presentation.onLoadBody = function(fn){
 
 /* create class presentation */
 presentation.ajax = function(){
-    f = presentation.framework
+    var f = presentation.framework
     presentation.onLoadBody(function(){
         f('body').on('click', 'a.ajax', function(event){event.preventDefault(); f.get(this.href); });
     });
@@ -31,5 +31,5 @@ presentation.ajax = function(){
     presentation.framework = framework;
     var ajax = new this.ajax();
     
-    f(window).on('load', function(){ framework(presentation).trigger('onLoadBody'); });
+    framework(window).on('load', function(){ framework(presentation).trigger('onLoadBody'); });
 }).call(presentation, jQuery);
